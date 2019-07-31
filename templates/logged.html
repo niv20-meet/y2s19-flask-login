@@ -5,14 +5,22 @@
 </head>
 <body>
 <h1>
-Hi {{session['name']}}, you are logged in.
+Hi {{ u.username}}, you are logged in.
 </h1>
-
+<p>your fav food is {{u.fav_food}}</p>
 <a href = "/logout"> Logout </a>
 
+<img src={{u.pic}}>
 
-<form action="/fav_food" method="POST">
+
+<form action="/fav_food" method="post">
 <input type="fav_food" name="fav_food" placeholder="fav_food">
+<input type="submit" value="save">
+</form>
+
+
+<form action="/add_pic" method="post">
+<input type="file" name="inputfile">
 <input type="submit" value="save">
 </form>
 

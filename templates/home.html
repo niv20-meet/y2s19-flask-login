@@ -12,13 +12,13 @@ Login form WITH session!
 Hi {{session['name']}}, you are logged in.
 {%endif%}
 
-<form action="/login" method="POST">
+<form action="/login" method="post">
   <input type="username" name="username" placeholder="Username">
 <input type="password" name="password" placeholder="Password">
 <input type="submit" value="Log in">
 </form>
 
-<form action="/signup" method="POST">
+<form action="/signup" method="post">
   <input type="username" name="username" placeholder="Username">
 <input type="password" name="password" placeholder="Password">
 <input type="submit" value="Sign up">

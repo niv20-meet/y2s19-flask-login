@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, Boolean
+from sqlalchemy import Column, Integer, String, Boolean 
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship, sessionmaker
 from sqlalchemy import create_engine
@@ -12,8 +12,7 @@ class User(Base):
     username = Column(String)
     password_hash = Column(String)
     fav_food = Column(String)
-
-
+    pic = Column(src)
 
     def hash_password(self, password):
         self.password_hash = pwd_security.encrypt(password)
