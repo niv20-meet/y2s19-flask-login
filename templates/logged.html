@@ -1,6 +1,21 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
 <h1>
 Hi {{session['name']}}, you are logged in.
 </h1>
 
 <a href = "/logout"> Logout </a>
+
+
+<form action="/fav_food" method="POST">
+<input type="fav_food" name="fav_food" placeholder="fav_food">
+<input type="submit" value="save">
+</form>
+
+
+</body>
+</html>
